@@ -84,7 +84,6 @@ export default function Home() {
 
   return (
     <div className={styles.home}>
-      {/* 1. Hero Banner */}
       <section className={styles.hero}>
         <div className={styles.heroOverlay} />
         <div className={`container ${styles.heroContainer}`}>
@@ -142,7 +141,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. Featured Products */}
       <section className={styles.section}>
         <div className="container">
           <SectionHeader
@@ -159,7 +157,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. Categories Grid */}
       <section className={`${styles.section} ${styles.altSection}`}>
         <div className="container">
           <SectionHeader
@@ -188,7 +185,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Trending Products */}
       <section className={styles.section}>
         <div className="container">
           <SectionHeader
@@ -205,7 +201,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. Promotional Banner */}
       <section className={styles.promoBanner}>
         <div className="container">
           <div className={styles.promoInner}>
@@ -233,7 +228,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. Best Sellers */}
       <section className={styles.section}>
         <div className="container">
           <SectionHeader
@@ -250,7 +244,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. Limited Deals Section with Timer */}
       <section className={`${styles.section} ${styles.dealSection}`}>
         <div className="container">
           <div className={styles.dealHeader}>
@@ -274,7 +267,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. New Arrivals */}
       <section className={styles.section}>
         <div className="container">
           <SectionHeader
@@ -291,7 +283,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 9. Testimonials */}
       <section className={`${styles.section} ${styles.altSection}`}>
         <div className="container">
           <SectionHeader
@@ -313,7 +304,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 10. Newsletter */}
       <section className={styles.newsletterSection}>
         <div className="container">
           <div className={styles.newsletterCard}>

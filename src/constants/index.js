@@ -33,7 +33,6 @@ export const PRICE_RANGES = [
   { min: 500, max: Infinity, label: '₹500+' },
 ];
 
-// coupon codes — keep these secret from real users lol
 export const COUPON_CODES = {
   SAVE10: { type: 'percent', value: 10, label: '10% off' },
   FLAT20: { type: 'flat', value: 20, label: '₹20 off' },

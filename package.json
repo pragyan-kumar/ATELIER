@@ -1,7 +1,8 @@
 {
-  "name": "ecommerce",
+  "name": "atelier",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Curated modern sartorial and lifestyle boutique built with React 19 and Vite",
   "type": "module",
   "scripts": {
     "dev": "vite",
