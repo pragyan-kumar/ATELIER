@@ -1,18 +1,6 @@
 # ATELIER
 
-A high-fidelity sartorial & lifestyle e-commerce web application engineered with modern React 19, Vite, and CSS Modules. Designed around architectural minimalism, tactile interactions, and uncompromising typography.
-
----
-
-## Architecture & Tech Stack
-
-- **Core**: React 19, Vite (instant HMR, ES-module native builds)
-- **Routing**: React Router 7 with code-split route boundaries via `React.lazy` & `Suspense`
-- **Styling**: Scoped CSS Modules with custom design tokens (`globals.css`)
-- **Animations**: Framer Motion for spring physics, layout transforms, and drawer transitions
-- **Icons**: React Icons (`fi` Feather & `fa` FontAwesome sets)
-- **State Management**: Lightweight Context API + local storage synchronization for persistent cart and wishlist states
-- **Deployment**: Optimized for Vercel with single-page application routing rules (`vercel.json`)
+A high-fidelity sartorial & lifestyle e-commerce web application engineered around architectural minimalism, tactile interactions, and uncompromising typography.
 
 ---
 
@@ -70,8 +58,5 @@ npm run build
 npm run preview
 ```
 
----
 
-## License
 
-MIT
