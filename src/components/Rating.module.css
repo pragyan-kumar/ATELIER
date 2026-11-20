@@ -1,0 +1,26 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star {
+  color: #f59e0b;
+  font-size: 14px;
+}
+
+.starEmpty {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.count {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}

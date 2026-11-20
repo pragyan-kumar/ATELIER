@@ -1,0 +1,197 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+  border: 1px solid var(--color-border);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 125%; /* 4:5 aspect ratio */
+  overflow: hidden;
+  background-color: #f3f4f6;
+}
+
+.imageLink {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.image,
+.imageHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+.imageHover {
+  opacity: 0;
+}
+
+.card:hover .image {
+  transform: scale(1.04);
+}
+
+.card:hover .imageHover {
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+.wishlistBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.2s, color 0.2s;
+  z-index: 2;
+}
+
+.wishlistBtn:hover {
+  transform: scale(1.1);
+  background: #ffffff;
+}
+
+.activeWishlist {
+  color: var(--color-error);
+}
+
+.heartFilled {
+  fill: currentColor;
+}
+
+.quickAddBtn {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.825rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease;
+  z-index: 2;
+}
+
+.card:hover .quickAddBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quickAddBtn:hover {
+  background-color: #27272a;
+}
+
+@media (max-width: 768px) {
+  .quickAddBtn {
+    opacity: 1;
+    transform: translateY(0);
+    position: static;
+    margin: 8px 12px 12px;
+    width: calc(100% - 24px);
+  }
+}
+
+.details {
+  padding: 14px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.category {
+  font-size: 0.725rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+.title a {
+  transition: color 0.2s;
+}
+
+.title a:hover {
+  color: var(--color-accent);
+}
+
+.ratingRow {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.price {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.originalPrice {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
